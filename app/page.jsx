@@ -58,7 +58,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <div className="lg:flex lg:justify-between width-config">
+        <div className="lg:flex lg:justify-between gap-12 width-config">
           <div className=" lg:basis-[70%]">
             <section className='mt-[6rem] mb-[2rem] '>
               <div className="section ">

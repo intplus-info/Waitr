@@ -38,7 +38,7 @@ const Navbar = () => {
     <header className={`overscroll-none z-[1000] fixed top-0 w-full   ${isScrolled ? 'md:bg-black ' : 'bg-transparent'} transition-colors duration-500`}>
       <div className='md:px-7 md:py-[20px]  top-0 w-full  py-3.5 px-3 mx-uto gradient  md:bg-none flex justify-between items-center'>
         <div className="flex  justify-between items-center w-full md:basis-[30%]">
-          <Image className={`sm:w-[30%] ${isOpen ? ' transition-opacity duration-300 opacity-0' : ''}`} src={logo} alt="Logo" />
+          <Image className={`sm:w-[20%] ${isOpen ? ' transition-opacity duration-300 opacity-0' : ''}`} src={logo} alt="Logo" />
 
           <div className="ml-auto md:hidden relative z-[60]">
             {!isOpen && (
