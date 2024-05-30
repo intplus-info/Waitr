@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import logo from '@/public/logo.svg'
-import heroImage from '@/public/hero-image.svg'
+import desktop from '@/public/desktop.svg'
+import mobile from '@/public/mobile.svg'
 import bottomBg from '@/public/bottom-bg.svg'
 import scanRestaurant from '@/public/restaurant-qr.svg'
 import scanGuest from '@/public/guest-qr.svg'
@@ -23,10 +24,10 @@ const Home = () => {
     <div className="overflow-x-hidden">
        <Navbar />
       <div className='' >
-        <section className=' nav  h-[50lvh] lg:h-[100dvh] '>
-          {/* <Image className='w-full  ' src={heroImage} alt=''/> */}
-          <div className=" lg:gap-[4rem] flex flex-col lg:pl-[4rem] ml-5 xl:ml-[70px] gap-5 w-[15rem] md:w-[35rem] xl:w-[48rem] h-[85%] xl:h-[88%] justify-end">
-            <h2 className=' text-2xl font-semibold md:leading-[70px] xl:leading-[90px] text-white mt-auto md:text-[3.5rem] xl:text-[5rem]   '>Improve your customer&apos;s experience with a QR menu</h2>
+        <section className=' mobile-hero-bg md:desktop-hero-bg  h-[50lvh] md:h-[100dvh] '>
+          {/* <Image className='w-full max-w-full max-h-full ' src={mobile} alt=''/> */}
+          <div className=" lg:gap-[4rem] flex flex-col lg:pl-[4rem] ml-5 xl:ml-[70px] gap-5 w-[15rem] sm:w-[20rem] md:w-[35rem] xl:w-[48rem] h-[85%] xl:h-[88%] justify-end">
+            <h2 className=' text-2xl sm:text-3xl font-semibold md:leading-[70px] xl:leading-[90px] text-white mt-auto md:text-[3.5rem] xl:text-[5rem]   '>Improve your customer&apos;s experience with a QR menu</h2>
             <Link href="/notFound" className='button lg:text-xl hover:font-semibold lg:font-semibold lg:w-[10rem] lg:py-[17px] lg:rounded-[145px] lg:px-[4px] get-started  text-center montserrat register-hover'>Get Started</Link>
           </div>
         </section>
