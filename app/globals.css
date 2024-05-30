@@ -18,19 +18,21 @@
 .line-height{
   line-height: 90px;
 }
-.nav{
-  background-image: url('../public/hero-image.svg');
-  background-size: cover;
-  background-position: center;
-  
-}
+
 *{
   font-family: var(--font-montserrat);
 }
-.food-bg{
-  background-image: url('../public/bottom-bg.svg');
+.mobile-hero-bg{
+  background-image: url('../public/mobile.svg');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  /* backdrop-filter: blur(70px); */
+  
+}
+.desktop-hero-bg{
+  background-image: url('../public/desktop.svg');
+  background-size: contain;
+  background-position: center center;
   /* backdrop-filter: blur(70px); */
   
 }
