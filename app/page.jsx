@@ -24,10 +24,10 @@ const Home = () => {
     <div className="overflow-x-hidden">
        <Navbar />
       <div className='' >
-        <section className=' mobile-hero-bg md:desktop-hero-bg  h-[50lvh] md:h-[100dvh] '>
-          {/* <Image className='w-full max-w-full max-h-full ' src={mobile} alt=''/> */}
-          <div className=" lg:gap-[4rem] flex flex-col lg:pl-[4rem] ml-5 xl:ml-[70px] gap-5 w-[15rem] sm:w-[20rem] md:w-[35rem] xl:w-[48rem] h-[85%] xl:h-[88%] justify-end">
-            <h2 className=' text-2xl sm:text-3xl font-semibold md:leading-[70px] xl:leading-[90px] text-white mt-auto md:text-[3.5rem] xl:text-[5rem]   '>Improve your customer&apos;s experience with a QR menu</h2>
+        <section className='relative  mobile-hero-bg md:desktop-hero-bg  h-[50lvh] md:h-[100dvh] '>
+          {/* <Image className='w-full -z-10 max-w-full max-h-full ' src={desktop} alt=''/> */}
+          <div className="  lg:gap-[4rem] flex flex-col lg:pl-[4rem] ml-5 xl:ml-[70px] gap-5 w-[15rem] sm:w-[20rem] md:w-[35rem] xl:w-[48rem] h-[85%] xl:h-[88%] justify-end">
+            <h2 className=' text-2xl sm:text-3xl tracking-wide font-semibold md:leading-[70px] xl:leading-[90px] text-white mt-auto md:text-[3.5rem] xl:text-[5rem]   '>Improve your customer&apos;s experience with a QR menu</h2>
             <Link href="/notFound" className='button lg:text-xl hover:font-semibold lg:font-semibold lg:w-[10rem] lg:py-[17px] lg:rounded-[145px] lg:px-[4px] get-started  text-center montserrat register-hover'>Get Started</Link>
           </div>
         </section>
@@ -38,7 +38,7 @@ const Home = () => {
             <p className='text-center  md:max-w-[35rem] lg:text-xl lg:max-w-[50rem] mx-auto'>Tap into digital demand and enable contactless & frictionless ordering experiences in your branding in no time. Prove return on investment with digital ordering by experiencing more direct sales, lower margins & increased retention.</p>
           </div>
         </section>
-        <section className='my-[5rem] lg:my-[9rem] width-config'>
+        <section className='my-[5rem]  lg:my-[9rem] width-config'>
           <div className="section lg:mx-0 lg:w-full lg:flex   lg:justify-between lg:items-center">
             <Image src={customizeMenu} className='lg:basis-[50%] lg:max-w-[45%] mb-[2rem] lg:mb-0 img' alt=''/>
             <div className="lg:basis-[50%] ">
