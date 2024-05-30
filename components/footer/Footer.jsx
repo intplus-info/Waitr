@@ -8,8 +8,8 @@ import instagram from '@/public/instagram-icon.svg'
 import Link from 'next/link'
 const Footer = () => {
   return (
-    <footer>
-      <div className="section text-black">
+    <footer className='width-config'>
+      <div className="section  lg:w-full  text-black">
         <div className="mb-[2rem] md:flex md:justify-between md:basis-[30%]">
           <Image className='mb-4' src={logo} alt=''/>
           <div className=" flex justify-between items-center md:basis-[58%]">

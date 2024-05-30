@@ -15,6 +15,9 @@
 .button{
   @apply bg-orange text-white rounded-3xl cursor-pointer
 }
+.line-height{
+  line-height: 90px;
+}
 .nav{
   background-image: url('../public/hero-image.svg');
   background-size: cover;
