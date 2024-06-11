@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 const notFound = () => {
   return (
-    <div className=' relative bg-not-found bg-transparent h-[100dvh] py-[1rem]  ' >
+    <div className=' relative  bg-transparent h-[100dvh] py-[1rem]  ' >
       <div class="absolute inset-0 z-0">
             <Image src={errorPage} alt="Background" className="object-cover w-full h-full"/>
             <div class="absolute inset-0 bg-[#000000] opacity-[83%]"></div>

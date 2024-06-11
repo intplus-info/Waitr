@@ -6,7 +6,7 @@ import close from '@/public/close.svg';
 import mobileMenu from '@/public/mobile-menu.svg';
 import Link from 'next/link';
 
-const Navbar = () => {
+const SignInNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -36,9 +36,9 @@ const Navbar = () => {
 
   return (
     <header className={`overscroll-none z-[1000] fixed top-0 w-full   ${isScrolled ? 'md:bg-black ' : 'bg-transparent'} transition-colors duration-500`}>
-      <div className='md:px-7 md:py-[20px]  top-0 w-full  py-3.5 px-3 mx-uto gradient  md:bg-none flex justify-between items-center'>
+      <div className='md:px-7 lg:px-12  md:py-[20px]  top-0 w-full  py-3.5 px-3 mx-uto gradient  md:bg-none flex justify-between items-center'>
         <div className="flex  justify-between items-center w-full md:basis-[30%]">
-          <Image className={`sm:w-[20%] ${isOpen ? ' transition-opacity duration-300 opacity-0' : ''}`} src={logo} alt="Logo" />
+          <Image className={`  sm:w-[10%] md:w-[25%] max-w-[15rem] ${isOpen ? ' transition-opacity duration-300 opacity-0' : ''}`} src={logo} alt="Logo" />
 
           <div className="ml-auto md:hidden relative z-[60]">
             {!isOpen && (
@@ -63,13 +63,12 @@ const Navbar = () => {
           </div>
         </div>
         <nav className="hidden md:flex gap-8 md:items-center">
-          <p className="text-white">Call: (+234) 703 957 4358</p>
           <div className="flex gap-4">
-            <Link className="text-orange border border-orange px-4 py-1.5 rounded-3xl sign-in-hover" href="/signIn">
-              Sign in
+            <Link className="bg-orange text-white border border-orange px-4 py-1.5 rounded-3xl register-hover" href="/">
+              Home
             </Link>
-            <Link className="bg-orange text-white px-4 py-2 rounded-3xl register-hover" href="/register">
-              Register, it&apos;s FREE
+            <Link className="border border-orange text-orange px-4 py-2 rounded-3xl sign-in-hover" href="/getInTouch">
+              Get in touch
             </Link>
           </div>
         </nav>
@@ -84,10 +83,9 @@ const Navbar = () => {
         <div className={` md:hidden space-y-8 transition-transform duration-500 ease-in-out  ${isOpen ? '  flex relative top-[20dvh] flex-col  gap-16 justify-center items-center  transform translate-x-0 opacity-100 ' : 'transform translate-x-full opacity-0  md:flex md:gap-2 md:basis-[70%] md:max-w-[550px] md:items-center'}`}>
 
           <Image src={logo} alt="Logo" />
-          <p className='text-white flex-none  '>Call: (+234) 703 957 4358</p>
           <div className="flex-grow flex flex-col gap-5 justify-center  md:flex-row md:gap-3 md:justify-end items-center ">
-            <Link className=' cursor-pointer text-center w-[70%] mx-auto  text-orange border px-4 py-1.5 rounded-3xl border-orange md:mx-0 md:w-[30%] sign-in-hover' href="/signIn">Sign in</Link>
-            <Link className=' button py-2 px-4 register-hover' href="/register">Register, it&apos;s FREE</Link>
+            <Link className=' cursor-pointer text-center w-[70%] mx-auto  bg-orange text-white border px-4 py-1.5 rounded-3xl border-orange md:mx-0 md:w-[30%] register-hover' href="/">Home</Link>
+            <Link className='border border-orange text-orange rounded-3xl  py-2 px-4 sign-in-hover' href="/getInTouch">Get in touch</Link>
           </div>
         </div>
       </div>
@@ -95,4 +93,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default SignInNav;
