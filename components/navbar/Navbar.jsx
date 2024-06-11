@@ -65,7 +65,7 @@ const Navbar = () => {
         <nav className="hidden md:flex gap-8 md:items-center">
           <p className="text-white">Call: (+234) 703 957 4358</p>
           <div className="flex gap-4">
-            <Link className="text-orange border border-orange px-4 py-1.5 rounded-3xl sign-in-hover" href="/sign-in">
+            <Link className="text-orange border border-orange px-4 py-1.5 rounded-3xl sign-in-hover" href="/signIn">
               Sign in
             </Link>
             <Link className="bg-orange text-white px-4 py-2 rounded-3xl register-hover" href="/register">

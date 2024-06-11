@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React , { useState, useEffect }from 'react'
 import Image from 'next/image'
 import logo from '@/public/logo.svg'
 import desktop from '@/public/desktop.svg'
@@ -19,10 +20,28 @@ import chart from '@/public/chart.svg'
 import customizeMenu from '@/public/customize-menu.svg'
 import instantUpdate from '@/public/instant-update.svg'
 import Link from 'next/link'
+import WaitlistModal from '@/components/waitlist/WaitlistModal'
 const Home = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setModalIsOpen(true);
+    }, 5000)
+
+    return () => clearTimeout(timer); 
+  }, []);
+
+  const handleModalClose = () => {
+    setModalIsOpen(false);
+    // Reopen the modal after 10 seconds of closing it
+    // setTimeout(() => {
+    //   setModalIsOpen(true);
+    // }, 20000);
+  };
   return (
     <div className="overflow-x-hidden">
        <Navbar />
+       <WaitlistModal isOpen={modalIsOpen} onRequestClose={handleModalClose}/>
       <div className='' >
         <section className='relative  mobile-hero-bg md:desktop-hero-bg  h-[50lvh] md:h-[100dvh] '>
           {/* <Image className='w-full -z-10 max-w-full max-h-full ' src={desktop} alt=''/> */}
