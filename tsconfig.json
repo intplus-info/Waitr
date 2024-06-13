@@ -1,4 +1,4 @@
-{}
+{
 "compilerOptions": {
     "lib": [
       "dom",
@@ -32,3 +32,4 @@
     "node_modules"
   ]
 }
+
