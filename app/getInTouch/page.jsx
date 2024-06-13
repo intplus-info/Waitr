@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import errorPage from '@/public/error-page-bg.svg'
 
-const page = () => {
+const Page = () => {
   const [email, setEmail] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -107,4 +107,4 @@ const sendEmail = (e) => {
   )
 }
 
-export default page
+export default Page
