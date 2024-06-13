@@ -67,7 +67,6 @@ const sendEmail = (e) => {
                     type="email"
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
-                    autocomplete="on"
                     placeholder='First Name'
                     className=" pl-3 w-1/2 py-3 text-[.8rem] border border-white bg-transparent outline-none rounded-[5px] text-white"
                     />
@@ -75,7 +74,6 @@ const sendEmail = (e) => {
                     type="email"
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
-                    autocomplete="on"
                     placeholder='Last name'
                     className=" pl-3 w-1/2 py-3 text-[.8rem] border border-white bg-transparent outline-none rounded-[5px] text-white"
                     />
@@ -84,7 +82,6 @@ const sendEmail = (e) => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                autocomplete="on"
                 placeholder='Enter your email'
                 className=" pl-3 py-3 text-[.8rem] border border-white bg-transparent outline-none rounded-[5px] text-white"
                 />

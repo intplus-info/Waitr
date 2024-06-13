@@ -92,10 +92,10 @@ const Page = () => {
           <div class="absolute inset-0 bg-[#000000] opacity-[83%]"></div>
       </div>
       <div className="relative z-10 text-white  w-[90%] h-[100%] md:w-[70%] lg:max-w-[45%] md:ml-8 lg:ml-12  mx-auto flex flex-col justify-between  ">
-        <div className="h-[60%] lg:h-[50%] my-auto ">
+        <div className="h-[50%] flex flex-col justify-end gap-12 md:h-[55%] lg:h-[50%] my-auto ">
           <div className="text-white">
             <h3 className=" mb-4  text-[1.2rem] md:text-[40px] font-semibold ">Join The Waitr </h3>
-            <div className="text-[12px] md:text-[18px] mb-6">
+            <div className="text-[12px] md:text-[18px] mb-4 md:mb-6">
               <p className=''>Join the Waitr waitlist and enjoy: </p>
               <ul className=' list-disc pl-6'>
                 <li>3 months FREE access to our cutting-edge menu and order management system.</li>
@@ -105,31 +105,33 @@ const Page = () => {
                 Don&apos;t miss out on this exclusive opportunity to transform your restaurant or hotel with Waitr.
               </p>
             </div>
-            {submitted? <p className='text-[#27BD90] font-medium'>Thank you for joining the waitlist!</p>:
-              <form onSubmit={sendEmail}  className="flex flex-col gap-2 h-[50px] md:flex-row md:w-[70%] lg:w-[60%]">
-                <input
-                type="email"
-                value={email}
-                onChange={handleEmailChange}
-                autocomplete="on"
-                placeholder='Enter your email'
-                className=" pl-3 py-3 text-[14px] font-semibold basis-[85%] outline-none rounded-[5px] text-[#505050]"
-                />
-                <button type="submit" disabled={loading} className={` w-[25%] text-[14px] font-semibold lg:w-[20%] transition-colors duration-300 ${isValidEmail? 'bg-orange text-black':'bg-[#676767] text-[#F7F7F7] '}  text-[.8rem] rounded-[5px] p-2 `}>
-                  {loading ? (
-                    <ClipLoader
-                      color="#fff"
-                      height={5}
-                      width={10}
-                    />
-                  ) : (
-                    'Submit'
-                  )}
-                </button>
-              </form>
-            }
-            <div className="mt-4 md:mt-0 min-h-[24px] ">
-              {message && <p className={`mt-4 md:mt-2 text-[14px]  font-semibold ${messageType==='error' ?'text-[#F21010] ':'text-[#27BD90]'}  `}>{message}</p>}
+            <div className=" flex flex-col-reverse md:flex-col  ">
+              {submitted? <p className='text-[#27BD90] font-medium'>Thank you for joining the waitlist!</p>:
+                <form onSubmit={sendEmail}  className="flex flex-col gap-2 h-[50px] md:flex-row md:w-[70%] lg:w-[60%]">
+                  <input
+                  type="email"
+                  value={email}
+                  onChange={handleEmailChange}
+                  autocomplete="on"
+                  placeholder='Enter your email'
+                  className=" pl-3 py-3 text-[14px] font-semibold basis-[85%] outline-none rounded-[5px] text-[#505050]"
+                  />
+                  <button type="submit" disabled={loading} className={` w-[25%] text-[14px] font-semibold lg:w-[20%] transition-colors duration-300 ${isValidEmail? 'bg-orange text-black':'bg-[#676767] text-[#F7F7F7] '}  text-[.8rem] rounded-[5px] p-2 `}>
+                    {loading ? (
+                      <ClipLoader
+                        color="#fff"
+                        height={5}
+                        width={10}
+                      />
+                    ) : (
+                      'Submit'
+                    )}
+                  </button>
+                </form>
+              }
+              <div className=" md:mt-0 min-h-[24px]">
+                {message && <p className={`md:mt-2 text-[14px]  font-semibold ${messageType==='error' ?'text-[#F21010] ':'text-[#27BD90]'}  `}>{message}</p>}
+              </div>
             </div>
           </div>
           <p className='text-[10px]'>By submitting you&apos;re confirming that you agree with our <Link className='underline' href='terms'>Terms and Conditions.</Link></p>
