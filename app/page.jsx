@@ -14,8 +14,8 @@ import phone from '@/public/phone.svg'
 import pot from '@/public/pot.svg'
 import rating from '@/public/rating-icon.svg'
 import phoneIcon from '@/public/phone-icon.svg'
-import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/footer/Footer";
+import Navbar from "@/components/navbar/Navbar"
+import Footer from "@/components/footer/Footer"
 import chart from '@/public/chart.svg'
 import customizeMenu from '@/public/customize-menu.svg'
 import instantUpdate from '@/public/instant-update.svg'
