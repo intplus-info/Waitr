@@ -106,15 +106,15 @@ const EmailWaitlistModal = ({ isOpen, onRequestClose }) => {
               <h3 className="text-[#252B42] text-center md:text-left md:mb-4 text-[1.2rem] md:text-[30px] font-semibold ">Join our growing Waitlist of restaurants & hotels with a headstart</h3>
               <div className=" flex flex-col-reverse md:flex-col  ">
                 {submitted? <p className='text-[#27BD90] font-medium'>Thank you for joining the waitlist!</p>:
-                    <form onSubmit={sendEmail}  className="flex h-[50px] flex-col md:flex-row gap-4 md:gap0 ">
+                    <form onSubmit={sendEmail}  className="flex h-[50px] flex-col md:flex-row gap-4 md:gap-0 ">
                         <input
                         type="email"
                         value={email}
                         onChange={handleEmailChange}
                         placeholder='Your Email'
-                        className=" pl-3 py-3 text-[.8rem] outline-none md:basis-[80%] rounded-[12px] md:rounded-l-[14px]"
+                        className=" pl-3 py-3 text-[.8rem] outline-none md:basis-[80%] rounded-[12px] md:rounded-none md:rounded-l-[14px]"
                         />
-                        <button type="submit" disabled={loading}  className=" bg-[#171717] w-[30%] mx-auto rounded-[12px] md:basis-[20%] text-[.8rem] text-white p-2 md:border-r-0 md:rounded-r-[14px]">
+                        <button type="submit" disabled={loading}  className=" bg-[#171717] w-[30%] mx-auto rounded-[12px] md:basis-[20%] text-[.8rem] text-white p-2 md:rounded-none md:border-r-0 md:rounded-r-[14px]">
                         {loading ? (
                             <ClipLoader
                                 color="#fff"
