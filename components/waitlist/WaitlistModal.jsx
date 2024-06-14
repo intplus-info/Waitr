@@ -98,7 +98,7 @@ const EmailWaitlistModal = ({ isOpen, onRequestClose }) => {
   return (
     <div className={`fixed inset-0 flex items-center justify-center z-50 transition-opacity duration-500 ${isOpen ? 'opacity-100' : 'opacity-0'}`}>
       <div className={`fixed inset-0 bg-white bg-opacity-35 transition-opacity duration-500 ${isOpen ? 'opacity-75' : 'opacity-0'}`}></div>
-      <div className={`bg-[#F4F3F1]  min-h-[50%] px-3 md:p-6 rounded-lg shadow-lg z-10 w-[95%]  md:w-[80%] md:pb-8 lg:max-w-[60rem] transform transition-transform duration-500 ${isOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
+      <div className={`bg-[#F4F3F1] px-3 pt-6 pb-[4rem] md:p-6 rounded-lg shadow-lg z-10 w-[95%]  md:w-[80%] md:pb-8 lg:max-w-[60rem] transform transition-transform duration-500 ${isOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
         <Image src={close} onClick={handleClose} className='cursor-pointer ml-auto mb-4 md:mb-0'  alt=''/>
         <div className="flex  items-center gap-6 lg:gap-10  lg:w-[80%] lg:mx-auto">
             <Image src={phone}  alt='' className='hidden md:block'/>
