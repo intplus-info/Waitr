@@ -86,13 +86,13 @@ const Page = () => {
   return (
     <div className="">
       <SignInNav/>
-      <div className=' relative h-[100dvh] bg-transparent py-[1rem]  ' >
+      <div className=' relative h-[100vh] bg-transparent py-[1rem]  ' >
       <div class="absolute inset-0 z-0">
           <Image src={errorPage} alt="Background" className="object-cover w-full h-full"/>
           <div class="absolute inset-0 bg-[#000000] opacity-[83%]"></div>
       </div>
       <div className="relative z-10 text-white  w-[90%] h-[100%] md:w-[70%] lg:max-w-[45%] md:ml-8 lg:ml-12  mx-auto flex flex-col justify-between  ">
-        <div className="h-[50%] flex flex-col justify-end gap-12 md:h-[55%] lg:h-[50%] my-auto ">
+        <div className="h-[50%] flex flex-col justify-end gap-12 my-auto ">
           <div className="text-white">
             <h3 className=" mb-4  text-[1.2rem] md:text-[40px] font-semibold ">Join The Waitr </h3>
             <div className="text-[12px] md:text-[18px] mb-4 md:mb-6">
