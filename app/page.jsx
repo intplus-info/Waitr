@@ -26,8 +26,8 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setModalIsOpen(true);
-    }, 5000)
-
+    }, 1000)
+//change to 30 seconds and 30 seconds again
     return () => clearTimeout(timer); 
   }, []);
 
