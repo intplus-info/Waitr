@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import Image from 'next/image';
 import close from '@/public/waitlist-close.svg';
-import qrImage from '@/public/waitlist-scan.svg';
+import qrImage from '@/public/waitlist-scan-mobile.svg';
+import qrImageDesktop from '@/public/waitlist-scan-desktop.svg';
 import ClipLoader from "react-spinners/ClipLoader"
 
 const EmailWaitlistModal = ({ isOpen, onRequestClose }) => {
@@ -97,13 +98,14 @@ const EmailWaitlistModal = ({ isOpen, onRequestClose }) => {
 
   return (
     <div className={`fixed inset-0 flex items-center justify-center z-[1002] transition-opacity duration-500 ${isOpen ? 'opacity-100' : 'opacity-0'}`}>
-      <div className={`fixed inset-0  bg-[#000000CC] bg-opacity-80 transition-opacity duration-500 ${isOpen ? 'opacity-75' : 'opacity-0'}`}></div>
-      <div className={`bg-[#F4FF1] relative h-[90dvh] shadow-lg  w-[75%]  md:w-[80%]  lg:max-w-[60rem] transform transition-transform duration-500 ${isOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
+      <div className={`fixed inset-0  bg-[#000000] transition-opacity duration-500 ${isOpen ? 'opacity-85' : 'opacity-0'}`}></div>
+      <div className={`relative min-h-[50%] md:min-h-0  my-auto  w-[75%]  md:w-[90%]  lg:max-w-[55rem] transform transition-transform duration-500 ${isOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
         <Image src={close} onClick={handleClose} className='absolute right-0 cursor-pointer ml-auto '  alt=''/>
-        <div className="flex flex-col  items-center  lg:w-[80%] lg:mx-auto">
-            <Image src={qrImage} alt='' className=' w-full basis-[50%]'/>
-            <div className="bg-white h-[30rem] basis-[70%] py-5 min-h-[18rem]">
-              <div className="w-[90%] mx-auto">
+        <div className="flex flex-col md:flex-row  items-center md:items-start ">
+            <Image src={qrImage} alt='' className='md:hidden w-full basis-[50%]'/>
+            <Image src={qrImageDesktop} alt='' className='hidden md:block md:basis[60%] h-[90%]  '/>
+            <div className="bg-white h-[30rem] md:h-[30.3rem] basis-[70%] md:min-h-0 py-5 md:py-0 min-h-[18rem] ">
+              <div className="w-[90%] mx-auto md:h-[90%] md:flex md:flex-col justify-center">
                 <h3 className="text-black  mb-4 text-[30px] font-semibold ">Join the Waitlist</h3>
                 <p className='text-[.9rem] mb-4'>Get an head start for you restaurants & hotels with our Scan-To-Order QR Code system</p>
                 <div className=" flex flex-col-reverse md:flex-col  ">

@@ -118,10 +118,10 @@ const sendEmail = async (e) => {
                 </button>
             </form>
             <div className="-4 md:mt-0 min-h-[24px] ">
-              <p className={`mt-4 md:mt-2 text-[14px]  font-semibold ${messageType==='error' ?'text-[#F21010] ':'text-[#27BD90]'} `}>{errorMessage}</p>
+              <p className={` mt-2 text-[14px]  font-semibold ${messageType==='error' ?'text-[#F21010] ':'text-[#27BD90]'} `}>{errorMessage}</p>
             </div>
           </div>
-          <p className=' mt-3 text-[10px]'>By submitting you&apos;re confirming that you agree with our <Link className='underline' href='terms'>Terms and Conditions.</Link></p>
+          <p className=' text-[10px]'>By submitting you&apos;re confirming that you agree with our <Link className='underline' href='terms'>Terms and Conditions.</Link></p>
           
         </div> 
       </div>

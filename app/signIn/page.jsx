@@ -91,11 +91,11 @@ const Page = () => {
           <Image src={errorPage} alt="Background" className="object-cover w-full h-full"/>
           <div class="absolute inset-0 bg-[#000000] opacity-[83%]"></div>
       </div>
-      <div className="relative z-10 text-white  w-[90%] h-[100%] md:w-[70%] lg:max-w-[45%] md:ml-8 lg:ml-12  mx-auto flex flex-col justify-between  ">
-        <div className="h-[50%] flex flex-col justify-end gap-12 my-auto ">
-          <div className="text-white">
-            <h3 className=" mb-4  text-[1.2rem] md:text-[40px] font-semibold ">Join The Waitr </h3>
-            <div className="text-[12px] md:text-[18px] mb-4 md:mb-6">
+      <div className="relative z-10 text-white  w-[90%] h-[100%] md:w-[70%] md:mx-auto lg:max-w-[45%]   mx-auto flex flex-col justify-between  ">
+        <div className="h-[50%] flex flex-col justify-end gap-12 md:gap-0 md:justify-center md:items-center my-auto ">
+          <div className="text-white md:flex md:flex-col md:items-center">
+            <h3 className=" mb-4  text-[1.2rem] md:text-[40px] font-semibold ">Join the Waitlist</h3>
+            <div className="text-[12px] md:text-[18px] mb-4 leading-[34px]">
               <p className=''>Join the Waitr waitlist and enjoy: </p>
               <ul className=' list-disc pl-6'>
                 <li>3 months FREE access to our cutting-edge menu and order management system.</li>
@@ -105,9 +105,9 @@ const Page = () => {
                 Don&apos;t miss out on this exclusive opportunity to transform your restaurant or hotel with Waitr.
               </p>
             </div>
-            <div className=" flex flex-col-reverse md:flex-col  ">
+            <div className=" flex flex-col-reverse md:flex-col md:w-full ">
               {submitted? <p className='text-[#27BD90] font-medium'>Thank you for joining the waitlist!</p>:
-                <form onSubmit={sendEmail}  className="flex flex-col gap-2 h-[50px] md:flex-row md:w-[70%] lg:w-[60%]">
+                <form onSubmit={sendEmail}  className="flex flex-col gap-2 h-[50px] md:flex-row  md:w-full  ">
                   <input
                   type="email"
                   value={email}
