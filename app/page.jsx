@@ -26,17 +26,16 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setModalIsOpen(true);
-    }, 1000)
+    }, 10000)
 //change to 30 seconds and 30 seconds again
     return () => clearTimeout(timer); 
   }, []);
 
   const handleModalClose = () => {
     setModalIsOpen(false);
-    // Reopen the modal after 10 seconds of closing it
-    // setTimeout(() => {
-    //   setModalIsOpen(true);
-    // }, 20000);
+    setTimeout(() => {
+      setModalIsOpen(true);
+    }, 30000);
   };
   return (
     <div className="overflow-x-hidden">
