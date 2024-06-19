@@ -70,10 +70,10 @@ const sendEmail = async (e) => {
           <Image src={errorPage} alt="Background" className="object-cover w-full h-full"/>
           <div className="absolute inset-0 bg-[#000000] opacity-[83%]"></div>
       </div>
-      <div className="relative z-10 text-white  w-[90%] max-w-[30rem] h-[100%] md:w-[50%] lg:max-w-[45rem] md:ml-8 lg:ml-12  mx-auto flex flex-col justify-between  ">
+      <div className="relative z-10 text-white  w-[90%] max-w-[30rem] h-[100%] md:w-[50%]  md:ml-8 lg:ml-12  mx-auto flex flex-col justify-between  ">
         <div className=" my-auto w-full ">
           <div className="text-white">
-            <h3 className=" mb-4  text-[1.2rem] md:text-[40px] font-semibold ">Get In Touch!</h3>
+            <h3 className=" mb-4  text-[1.2rem] md:text-[30px] font-semibold ">Get In Touch!</h3>
             <div className="text-[12px] md:text-[18px] mb-6">
               <p>
               Please write us on <span className='text-orange'>info@waitr.co</span>, if you have any question or suggestion. You can also connect with <span className='text-orange'><Link href='https://www.linkedin.com/in/alexanderoamen/' target='_blank'>Alex</Link></span> at LinkedIn.
